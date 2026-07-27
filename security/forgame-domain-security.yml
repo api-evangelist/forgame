@@ -1,0 +1,13 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: forgame.com
+  https: false
+domains:
+- domain: forgame.com
+  dnssec: true
+  caa:
+  - hk836.pc51.com.
+  spf: true
+  dmarc: false

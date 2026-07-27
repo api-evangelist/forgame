@@ -1,7 +1,14 @@
 aid: forgame
 name: forgame
-description: forgame is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Forgame Holdings Limited (HKEX 00484) is a Hong Kong-listed technology holding company founded in
+  2009 and headquartered in Shenzhen, China. It operates across cloud/light gaming, fintech, electronic
+  trade, and cloud storage. Its web and mobile game publishing platform 91wan, run by PRC entity
+  Guangzhou Weidong Internet Technology Co., Ltd., has distributed over 100 web games and attracted more
+  than 200 million registered players. In 2016 the group obtained an internet micro-lending (fintech)
+  license in the PRC, and since 2019 has explored e-sports and virtual-reality games. Forgame is
+  tracked by API Evangelist as a portfolio company of Qiming Venture Partners; no public developer API
+  or documentation surface was found during enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/forgame/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +16,30 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: http://www.forgame.com/img/upimages/favicon.ico
 tags:
 - Company
+- Gaming
+- Cloud Gaming
+- Web Games
+- Mobile Games
+- Fintech
+- E-Sports
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/forgame-domain-security.yml
 - type: Website
   url: https://forgame.com
+- type: Support
+  url: http://www.forgame.com/en_contact.html
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
